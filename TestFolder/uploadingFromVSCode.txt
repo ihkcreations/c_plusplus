@@ -1,1 +1,0 @@
-Testing if VSCode is connected with GitHub
