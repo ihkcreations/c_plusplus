@@ -18,5 +18,6 @@ int main()
 
     std::cout << "Hello " << name << " ! You are " << age << " years old" << std::endl;
 
+    // std::cerr << "Something is wrong!!" << std::endl;
     return 0;
 }
