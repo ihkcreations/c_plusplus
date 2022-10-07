@@ -8,8 +8,8 @@ int main()
     std::cout << "Size of message array : "
               << std::size(message)
               << std::endl;
-    // here the size of the array will be six as the null '\0'
-    // is being added automatically by compiler
+    // here the size of the array will be six as the'\0'
+    // null terminator is being added automatically by compiler
 
     std::cout << std::endl;
     char message2[]{"Hello World!"};
