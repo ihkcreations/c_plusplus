@@ -8,7 +8,7 @@ int main()
 
     while (i < COUNT)
     {
-        std::cout << "I Love C++" << std::endl;
+        std::cout << i << " : I Love C++" << std::endl;
         i++;
     }
 }
