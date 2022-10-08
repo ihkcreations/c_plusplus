@@ -34,4 +34,9 @@ int main()
     std::cout << "Value of pointer char now : "
               << *p_char
               << std::endl;
+
+    const char *message2{"Hello World!"};
+    std::cout << std::endl;
+
+    std::cout << "message2: " << message2 << std::endl;
 }
