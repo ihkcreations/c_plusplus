@@ -36,4 +36,9 @@ int main()
 
     delete p_number3;
     p_number3 = nullptr;
+
+    // can reuse the pointer like this
+    p_number1 = new int(820);
+    std::cout << std::endl;
+    std::cout << "p_number 1 : " << *p_number1 << std::endl;
 }
