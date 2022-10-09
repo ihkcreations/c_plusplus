@@ -1,8 +1,8 @@
 #include <iostream>
-#include "compare.h"
+#include "gholu.h"
 
 int main()
 {
-
-    std::cout << "maximum : " << maxi(34, 56) << std::endl;
+    int a = max(34, 56);
+    std::cout << "maximum : " << a << std::endl;
 }
