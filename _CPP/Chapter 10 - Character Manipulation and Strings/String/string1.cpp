@@ -18,6 +18,6 @@ int main()
     std::cout << "preferred_planet: " << preferred_planet << std::endl;
     std::cout << "message: " << message << std::endl;
     std::cout << "duplicate characters: " << duplicateCharacters << std::endl;
-    std::cout << "fullname: " << fullName << std::endl;
-    std::cout << "fullname: " << fullName << std::endl;
+    std::cout << "greeting: " << greeting << std::endl;
+    std::cout << "saying hello: " << sayingHello << std::endl;
 }
