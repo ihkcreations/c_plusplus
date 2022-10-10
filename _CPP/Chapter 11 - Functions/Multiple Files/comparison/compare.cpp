@@ -1,4 +1,3 @@
-#include "compare.h"
 
 int max(int a, int b)
 {
