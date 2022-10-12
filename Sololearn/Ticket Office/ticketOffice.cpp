@@ -11,20 +11,32 @@ You need to create a program that takes the ages of all 5 people as input and ou
 int main()
 {
 
-    int age[5];
+    int ageList[5];
+    int ticketPrice{10};
+    int members = std::size(ageList);
+    int totalTicketPrice{ticketPrice * members};
 
-    for (int i{}; i < std::size(age); i++)
+    // std::cout << "Ticket price = " << totalTicketPrice << std::endl;
+
+    for (int i{}; i < std::size(ageList); i++)
     {
-        std::cin >> age[i];
+        std::cin >> ageList[i];
     }
 
-    int minimumAge{std::size(age)};
-    for (int i{}; i < std::size(age); i++)
+    double arraySize = ageList[members - 1];
+    double minimumAge{arraySize};
+    for (int i{}; i < std::size(ageList); i++)
     {
 
-        if (age[i] < minimumAge)
+        if (ageList[i] < minimumAge)
         {
-            minimumAge = age[i];
+            minimumAge = ageList[i];
         }
     }
+
+    double discount = (totalTicketPrice * (minimumAge / 100));
+    // std::cout << "Discout : " << discount << std::endl;
+
+    double finalTicketPrice = totalTicketPrice - discount;
+    std::cout << finalTicketPrice << std::endl;
 }
