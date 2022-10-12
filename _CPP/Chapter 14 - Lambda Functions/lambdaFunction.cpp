@@ -20,4 +20,13 @@ int main()
     funct();
     funct();
     funct();
+
+    // lamda function that returns something
+    std::cout << std::endl;
+    auto result = [](double a, double b)
+    {
+        return (a + b);
+    }(14.3, 20.3);
+
+    std::cout << "Result = " << result << std::endl;
 }
