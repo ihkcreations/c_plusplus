@@ -13,6 +13,8 @@ int main()
     else
         std::cout << "pre-standard C++\n";
 
+    std::cout << "Hello World" << std::endl;
+
     system("pause");
     return 0;
 }
