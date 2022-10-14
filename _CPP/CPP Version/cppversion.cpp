@@ -17,6 +17,7 @@ int main()
     std::cout << "Code Daily" << std::endl;
     std::cout << "Code Daily" << std::endl;
     std::cout << "Code Daily" << std::endl;
+    std::cout << "Code Daily" << std::endl;
 
     system("pause");
     return 0;
