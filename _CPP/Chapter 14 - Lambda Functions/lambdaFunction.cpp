@@ -29,4 +29,9 @@ int main()
     }(14.3, 20.3);
 
     std::cout << "Result = " << result << std::endl;
+
+    [](int a, int b)
+    {
+        std::cout << "a + b = " << a + b << std::endl;
+    }(14, 20);
 }
