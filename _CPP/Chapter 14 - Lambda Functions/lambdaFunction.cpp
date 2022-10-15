@@ -40,5 +40,11 @@ int main()
         return a + b;
     };
 
+    auto func2 = [](double a, double b) -> int
+    {
+        return a + b;
+    };
+
     std::cout << "Result of func1 : " << func1(45.3, 60.3) << std::endl;
+    std::cout << "Result of func2 : " << func2(4.3, 6.3) << std::endl;
 }
