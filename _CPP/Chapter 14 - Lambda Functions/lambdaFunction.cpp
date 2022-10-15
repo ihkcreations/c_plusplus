@@ -34,4 +34,11 @@ int main()
     {
         std::cout << "a + b = " << a + b << std::endl;
     }(14, 20);
+
+    auto func1 = [](double a, double b)
+    {
+        return a + b;
+    };
+
+    std::cout << "Result of func1 : " << func1(45.3, 60.3) << std::endl;
 }
