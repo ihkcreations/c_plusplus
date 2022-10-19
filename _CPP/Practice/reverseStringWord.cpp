@@ -1,71 +1,39 @@
 #include <iostream>
+#include <cstring>
 
 int main()
 {
 
     std::string message;
-
-    std::cout << "Enter message : ";
     std::getline(std::cin, message);
 
-    std::cout << std::endl;
-    std::cout << message << std::endl;
+    // std::cout << message << std::endl;
 
-    int messageLength = std::size(message);
-    std::cout << "length : " << messageLength << std::endl;
+    std::string stringArr[30];
+    // std::cout << "size of stringArr: " << std::size(stringArr) << std::endl;
 
-    for (int i{messageLength}; i >= 0; i--)
-    {
-
-        std::cout << message[i];
-    }
-
-    std::cout << std::endl;
-    std::cout << std::endl;
-
-    std::string words;
-    std::string substring;
-
-    // std::string stringArr[]{"Ball", "Apple", "Orange"};
-    // for (int i{}; i < std::size(stringArr); i++)
-    // {
-    //     std::cout << stringArr[i] << " ";
-    // }
-
-    int spacePos = 0;
-    int wordCount = 0;
-
-    for (int i{}; i < messageLength; i++)
-    {
-
-        if (message[i] == ' ')
-        {
-            spacePos = i;
-        }
-
-        if (message[i] != ' ')
-        {
-            wordCount++;
-        }
-
-        // for (int j{}; j < messageLength; j++)
-        // {
-
-        // }
-    }
-
+    std::string word = "";
     int i = 0;
-    while (i < messageLength)
+    for (auto x : message)
     {
-
-        if (message[i] == ' ')
+        if (x == ' ')
         {
-            spacePos = i;
+            stringArr[i] = word;
+            i++;
+            std::cout << word << std::endl;
+            word = "";
+        }
+        else
+        {
+            word = word + x;
         }
     }
+    std::cout << word << std::endl;
+    stringArr[i] = word;
+    std::cout << "========================" << std::endl;
 
-    // std::cout << spacePos << std::endl;
-    //  std::cout << wordCount << std::endl;
-
-    // std::cout << message.substr(spacePos + 1);
+    for (int j{i}; j >= 0; j--)
+    {
+        std::cout << stringArr[j] << " ";
+    }
 }
