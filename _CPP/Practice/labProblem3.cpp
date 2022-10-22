@@ -14,24 +14,29 @@ int main()
 
     int temp;
     int j;
+
+    int freq = 0;
+    int maxFreq = 0;
+    int maxValue;
+
     for (i = 0; i < N; i++)
     {
-        for (j = 0; j < N - 1; j++)
+        for (j = i + 1; j < N; j++)
         {
-            if (A[j] > A[j + 1])
+            if (A[i] == A[j])
             {
-                temp = A[j];
-                A[j] = A[j + 1];
-                A[j + 1] = temp;
+                freq++;
             }
+        }
+
+        if (freq > maxFreq)
+        {
+            maxFreq = freq;
+            maxValue = A[i];
         }
     }
 
-    printf("\n");
-    for (i = 0; i < N; i++)
-    {
-        printf("%d ", A[i]);
-    }
+    printf("%d ", maxValue);
 
     return 0;
 }
