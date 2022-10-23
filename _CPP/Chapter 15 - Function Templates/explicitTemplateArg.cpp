@@ -21,7 +21,7 @@ int main()
 
     maximum<double>(c, d); // explicitly calling the type
     maximum<double>(a, c); // explicitly calling the type even the variable type are not same
-    maximum<double>(a, e); // will show error as string cannot be converted to double
+    // maximum<double>(a, e); // will show error as string cannot be converted to double
 
     std::cout << "max(int)      : " << maximum(a, b) << std::endl;
     std::cout << "max(double)   : " << maximum(c, d) << std::endl;
