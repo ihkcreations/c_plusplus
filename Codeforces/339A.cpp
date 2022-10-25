@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cstring>
-#include <bits/stdc++.h>
 
 int main()
 {
