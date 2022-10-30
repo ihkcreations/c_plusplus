@@ -17,7 +17,7 @@ int main()
         n = n / 10;
     }
 
-    if (count >= 4 || count >= 7)
+    if (count >= 4 && count <= 77)
     {
         std::cout << "YES";
     }
