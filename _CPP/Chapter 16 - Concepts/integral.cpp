@@ -2,9 +2,7 @@
 #include <concepts>
 
 template <typename T>
-requires integral<T>
-
-    T add(T a, T b);
+requires integral<T> T add(T a, T b);
 {
     return a + b;
 }
