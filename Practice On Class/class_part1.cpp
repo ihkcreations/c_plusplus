@@ -36,8 +36,8 @@ int main()
 
     cout << endl;
     cout << p1.personName << endl;
-    p1.personName = "Jubaer";
-    cout << p1.personName << endl;
+    cout << p2.personName << endl;
+    cout << endl;
 
     p1.personDetail();
     p2.personDetail();
